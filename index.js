@@ -12,6 +12,7 @@ function myImages() {
     array.push(url);
     console.log(array);
     imageCount.innerText = array.length;
+    document.getElementById("image").value = "";
   }
 }
 let count = 0;
