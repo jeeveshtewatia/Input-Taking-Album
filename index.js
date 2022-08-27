@@ -24,6 +24,7 @@ function start() {
     alert("Please Enter Time");
   }
   if (speed !== "") {
+    container.innerHTML = null;
     startBtn.style.backgroundColor = "red";
     pauseBtn.style.backgroundColor = "green";
     startBtn.style.color = "white";
@@ -37,13 +38,13 @@ function start() {
 
     interval = setInterval(() => {
       container.innerHTML = null;
+      if (count === array.length) {
+        count = 0;
+      }
 
       container.append(img);
       img.src = array[count];
       count++;
-      if (count === array.length) {
-        count = 0;
-      }
     }, speed * 1000);
   }
 }
