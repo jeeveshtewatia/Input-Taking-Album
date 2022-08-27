@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Album Creator</h1>
+
+        <!-- <button><a href="index2.html">Sliding Page</a></button> -->
+        <label for="image">Please Provide URL of Images</label>
+        <input type="text" placeholder="Enter image url" id="image">
+        <button onclick="myImages()">Submit Image</button>
+        <h2>Number of Images :<span id="imgcount"></span></h2>
+        <input type="number" placeholder="Enter Speed In Seconds as 1,2,3,4...." id="speed">
+        <div class="btns">
+
+            <button onclick="start()" id="start">Start</button>
+            <button onclick="pause()" id="pause">Pause</button>
+        </div>
+        <div id="container"></div>
+    </div>
+</body>
+
+</html>
+<script src="index.js">
+
+</script>
